@@ -1,0 +1,18 @@
+{
+  "name": "pharmaiq-pharmacy-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Privacy-safe pharmacy inventory demo with simulated medicines, stock bands, and refill workflow.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler pages dev . --port 8788",
+    "test": "node --test tests/*.test.js",
+    "deploy": "wrangler pages deploy . --project-name pharmaiq --branch main"
+  },
+  "devDependencies": {
+    "wrangler": "4.166.0"
+  }
+}
