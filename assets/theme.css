@@ -45,3 +45,8 @@ body.theme-pharma .data-table td::before { content: attr(data-label) ': '; displ
 body.theme-pharma .data-table td:first-child { border-left: 0; font-size: 1rem; font-weight: 900; color: var(--accent-2); }
 body.theme-pharma .workflow-card { border-left: 4px solid var(--accent-2); }
 body.theme-pharma .action-grid { grid-template-columns: 1fr; }
+
+/* BACKEND: full-stack status controls */
+.backend-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+.backend-controls .mini-note { margin: 0; }
+.backend-controls .mini-note.error { color: #fca5a5; border-color: rgba(248, 113, 113, .5); }
