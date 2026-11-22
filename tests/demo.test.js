@@ -31,3 +31,22 @@ test('sponsor and contact details are present', () => {
   assert.match(index, /info@omegaapi\.com/);
   assert.match(index, /https:\/\/t\.me\/Omegaapiofficial/);
 });
+
+test('pharma theme art is local and present', () => {
+  const html = fs.readFileSync(new URL('index.html', root), 'utf8');
+  assert.match(html, /class="theme-pharma"/);
+  assert.match(html, /assets\/img\/hero\.svg/);
+  assert.match(html, /assets\/img\/flow\.svg/);
+  assert.ok(fs.existsSync(new URL('assets/theme.css', root)));
+  assert.ok(fs.existsSync(new URL('assets/img/hero.svg', root)));
+  assert.ok(fs.existsSync(new URL('assets/img/flow.svg', root)));
+});
+
+test('category layout is distinct', () => {
+  const html = fs.readFileSync(new URL('index.html', root), 'utf8');
+  const css = fs.readFileSync(new URL('assets/theme.css', root), 'utf8');
+  const app = fs.readFileSync(new URL('assets/app.js', root), 'utf8');
+  assert.ok(html.includes("PHARMACY DEMO · SIMULATED STOCK · NO PRESCRIPTIONS"));
+  assert.ok(css.includes('LAYOUT: pharma'));
+  assert.match(app, /data-label/);
+});

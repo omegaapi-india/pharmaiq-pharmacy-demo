@@ -1,0 +1,47 @@
+/* PharmaIQ — distinct theme layer. Local SVG art only. */
+body.theme-pharma {
+  --accent: #34d399;
+  --accent-2: #fbbf24;
+  --accent-ink: #052a1c;
+  --accent-soft: #34d39926;
+  --theme-bg: #0a1a16;
+}
+body.theme-pharma .eyebrow { color: var(--accent-2); }
+body.theme-pharma h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-2)); background-clip: text; color: transparent; }
+body.theme-pharma .brand-mark,
+body.theme-pharma .header-cta,
+body.theme-pharma .button.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--accent-ink); border-color: transparent; }
+body.theme-pharma .site-nav a:hover { color: var(--accent-2); }
+body.theme-pharma .mini-tag { background: var(--accent-soft); color: var(--accent-2); }
+body.theme-pharma .dot.green { background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+body.theme-pharma .hero { background: radial-gradient(circle at 85% 20%, var(--accent-soft), transparent 34%), var(--theme-bg); }
+body.theme-pharma .hero-card { background: linear-gradient(160deg, var(--theme-bg), #0b1120); }
+body.theme-pharma .mini-note { background: var(--accent-soft); color: var(--accent-2); }
+body.theme-pharma .section.soft { background: var(--accent-soft); }
+body.theme-pharma .data-table .status-cell { color: var(--accent-2); }
+body.theme-pharma .data-table .status-cell.review { color: #fbbf24; }
+body.theme-pharma .workflow-card span { color: var(--accent-2); }
+body.theme-pharma .log-item { border-left: 3px solid var(--accent); }
+body.theme-pharma .hero-art,
+body.theme-pharma .flow-banner img { display: block; width: 100%; height: auto; border-radius: 16px; }
+body.theme-pharma .hero-art { margin: 16px 0 8px; }
+body.theme-pharma .flow-banner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 18px; align-items: center; margin-top: 20px; padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: rgba(8, 13, 24, .55); }
+body.theme-pharma .flow-banner p { margin: 0; color: #a9bbcd; font-size: .86rem; }
+body.theme-pharma .hero-card { border-radius: 18px; border-left: 6px solid var(--accent); }
+body.theme-pharma .data-table tbody td:first-child { border-left: 3px solid var(--accent); }
+@media (max-width: 780px) {
+  body.theme-pharma .flow-banner { grid-template-columns: 1fr; }
+  body.theme-pharma .hero-card { transform: none; }
+}
+
+
+/* LAYOUT: pharmacy shelves */
+body.theme-pharma .data-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+body.theme-pharma .data-table, body.theme-pharma .data-table tbody, body.theme-pharma .data-table tr, body.theme-pharma .data-table td { display: block; width: 100%; }
+body.theme-pharma .data-table tbody { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+body.theme-pharma .data-table tr { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--accent-soft); }
+body.theme-pharma .data-table td { border: 0; padding: 3px 0; }
+body.theme-pharma .data-table td::before { content: attr(data-label) ': '; display: block; margin-bottom: 2px; color: var(--muted); font-size: .66rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+body.theme-pharma .data-table td:first-child { border-left: 0; font-size: 1rem; font-weight: 900; color: var(--accent-2); }
+body.theme-pharma .workflow-card { border-left: 4px solid var(--accent-2); }
+body.theme-pharma .action-grid { grid-template-columns: 1fr; }

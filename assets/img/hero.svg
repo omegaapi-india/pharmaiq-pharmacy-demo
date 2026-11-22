@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="PharmaIQ themed illustration">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#047857"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
+  <rect width="640" height="360" rx="28" fill="url(#g)"/>
+  <circle cx="590" cy="40" r="90" fill="#ffffff" opacity=".08"/>
+  <rect x="64" y="220" width="512" height="14" rx="7" fill="#ffffff" opacity=".35"/>
+  <rect x="64" y="286" width="512" height="14" rx="7" fill="#ffffff" opacity=".2"/>
+  <g transform="rotate(-28 180 150)">
+    <rect x="92" y="118" width="176" height="66" rx="33" fill="#ffffff"/>
+    <rect x="92" y="118" width="88" height="66" rx="33" fill="#34d399"/>
+  </g>
+  <g transform="rotate(18 400 150)">
+    <rect x="320" y="124" width="150" height="58" rx="29" fill="#fbbf24"/>
+    <rect x="320" y="124" width="75" height="58" rx="29" fill="#ffffff" opacity=".9"/>
+  </g>
+  <path d="M300 228c-24-34 6-66 42-54 0 34-18 54-42 54z" fill="#fbbf24" opacity=".9"/>
+  <circle cx="486" cy="252" r="26" fill="#ffffff" opacity=".5"/>
+  <circle cx="486" cy="252" r="10" fill="#34d399"/>
+</svg>
